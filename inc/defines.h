@@ -1,0 +1,26 @@
+#ifndef DEFINES_H
+#define DEFINES_H
+
+#define MIN(a,b) (((a)<(b))?(a):(b))
+#define MAX(a,b) (((a)>(b))?(a):(b))
+
+#define MAP_WIDTH 180
+#define MAP_HEIGHT 33
+
+#define SCREEN_WIDTH 1920
+#define SCREEN_HEIGHT 1080
+
+#define MAP_RENDER_WIDTH 60
+#define MAP_RENDER_HEIGHT 33
+
+#define BLOCK_SIZE 32
+#define PLAYER_MOVE_SPEED 8
+#define PLAYER_JUMP_SPEED -22
+
+#define MAX_KEYBOARD_KEYS 512
+#define MAX_SND_CHANNELS 16
+
+#define CENTER SDL_WINDOWPOS_CENTERED
+#define RENDER_FLAGS (SDL_RENDERER_ACCELERATED | SDL_RENDERER_PRESENTVSYNC)
+
+#endif
