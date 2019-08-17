@@ -38,14 +38,14 @@ CFLAGS = -std=c11 -Wall -Wextra -Werror -Wpedantic
 DFLAGS = -fsanitize=address -g
 RFLAGS = -Ofast
 
-FFLAGS = -I ./Frameworks/SDL2.framework/Versions/A/Header \
-		-F ./Frameworks -framework SDL2 -rpath ./Frameworks \
-		-I ./Frameworks/SDL2_image.framework/Versions/A/Header \
-		-F ./Frameworks -framework SDL2_image -rpath ./Frameworks \
-		-I ./Frameworks/SDL2_mixer.framework/Versions/A/Header \
-		-F ./Frameworks -framework SDL2_mixer -rpath ./Frameworks \
-		-I ./Frameworks/SDL2_ttf.framework/Versions/A/Header \
-		-F ./Frameworks -framework SDL2_ttf -rpath ./Frameworks
+FFLAGS = -I ./inc/Frameworks/SDL2.framework/Versions/A/Header \
+		-F ./inc/Frameworks -framework SDL2 -rpath ./inc/Frameworks \
+		-I ./inc/Frameworks/SDL2_image.framework/Versions/A/Header \
+		-F ./inc/Frameworks -framework SDL2_image -rpath ./inc/Frameworks \
+		-I ./inc/Frameworks/SDL2_mixer.framework/Versions/A/Header \
+		-F ./inc/Frameworks -framework SDL2_mixer -rpath ./inc/Frameworks \
+		-I ./inc/Frameworks/SDL2_ttf.framework/Versions/A/Header \
+		-F ./inc/Frameworks -framework SDL2_ttf -rpath ./inc/Frameworks
 
 all: install clean
 dbg: debug clean
