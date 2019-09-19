@@ -1,9 +1,10 @@
 *.DS_Store
-*.o
-*.out
 *~
 ~$*
 *.dms
 *.sw*
-*.a
+
 endgame
+
+*.o
+*.out
